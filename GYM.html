@@ -1,0 +1,179 @@
+gym
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link
+    rel="stylesheet"
+    href="@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');"
+  />
+  <link rel="stylesheet" href="css/syle.css" />
+  <style>
+    /* Css reset */
+
+    body {
+      font-family: "Open Sans", sans-serif;
+      color: rgba(0, 0, 0, 0.988);
+      margin: 0px;
+      padding: 0px;
+      background: url("img/gym.webp");
+      /* background: no-repeat; */
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      /* height: 4444px; */
+    }
+    .left {
+      position: absolute;
+      left: 60px;
+      top: 20px;
+      display: inline-block;
+      /* border: 2px solid red; */
+    }
+    .mid {
+      display: block;
+      width: 50%;
+      margin: 29px auto;
+      /* border: 2px solid #c8ff00; */
+    }
+    .right {
+      position: absolute;
+      right: 34px;
+      top: 43px;
+      display: inline-block;
+      /* border: 2px solid rgb(38, 0, 255); */
+    }
+    .navbar {
+      display: inline-block;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 25px;
+    }
+    .navbar li a {
+      color: rgb(4, 4, 4);
+
+      /* for removing underlines */
+      text-decoration: none;
+
+      padding: 34px 23px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      text-decoration: underline;
+      color: grey;
+    }
+    .left img {
+      width: 136px;
+      margin: 0px 30px;
+      /* invert function in css .google it 
+      used to convert black image to white and ..white to black*/
+      filter: invert(100%);
+    }
+    .left div {
+      text-align: center;
+      line-height: 19px;
+      font-size: 26px;
+    }
+    .btn {
+      margin: 0px 9px;
+      color: #0e0d0d;
+      background-color: rgba(0, 234, 255, 0.603);
+      padding: 4px 14px;
+      border: 2px solid rgb(79, 6, 225);
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+      font-family: "Open Sans", sans-serif;
+    }
+    .btn:hover {
+      background-color: rgb(255, 255, 255);
+    }
+    .container {
+      border: 2px solid rgb(255, 255, 255);
+      margin: 106px 300px;
+      padding: 75px;
+      width: 60%;
+      display: block;
+      border-radius: 28px;
+
+      /* text-align: centre; */
+    }
+    .formgroup input {
+      text-align: center;
+      display: block;
+      width: 500px;
+      padding: 1px;
+      border-radius: 8px;
+      /* display block or width means margin se centre kr skte h */
+      border: 2px solid black;
+      margin: 11px auto;
+      font-size: 25px;
+      font-family: "Open Sans", sans-serif;
+    }
+    .container h1 {
+      text-align: center;
+    }
+    .container button {
+      display: block;
+      width: 100%;
+      margin: 20px auto;
+    }
+  </style>
+
+  <body>
+    <header class="header">
+      <!-- left box for logo -->
+      <div class="left">
+        <img src="img/gym logo.jpeg" alt="" />
+        <div>SAHIL FITNESS</div>
+      </div>
+      <!-- mid box for navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#" class="active">home</a></li>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">fitness</a></li>
+          <li><a href="#">contact us</a></li>
+        </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+        <button class="btn">call us now</button>
+        <button class="btn">Email</button>
+      </div>
+    </header>
+
+    <div class="container">
+      <h1>join the best gym of Agra</h1>
+      <form action="noaction.php">
+        <div class="formgroup">
+          <!-- input:text -->
+          <input type="text" name="" placeholder="Enter ur name" />
+        </div>
+        <div class="formgroup">
+          <!-- input:text -->
+          <input type="text" name="" placeholder="Enter ur age" />
+        </div>
+        <div class="formgroup">
+          <!-- input:text -->
+          <input type="text" name="" placeholder="Enter ur gender" />
+        </div>
+        <div class="formgroup">
+          <!-- input:text -->
+          <input type="text" name="" placeholder="Locality" />
+        </div>
+        <div class="formgroup">
+          <!-- input:text -->
+          <input type="text" name="" placeholder="PHONE NO." />
+        </div>
+        <input type="submit" value="jjj" />
+        <button class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
